@@ -95,6 +95,11 @@ public class BankAccountTest {
         assertEquals("Cannot withdraw 10.0 from 0.0", e.getMessage());
         assertEquals(0, bankAccount.getBalance(), 0);
     }
+    @Test
+    public void testTrueIsTrue() {
+        assertTrue(true);
+    }
+
  // Not a very clean test! DON'T DO THAT!
     @Test
     public void testWithdrawWhenBalanceIsSufficientShouldDecreaseBalance() {
