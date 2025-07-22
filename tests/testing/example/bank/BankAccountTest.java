@@ -114,6 +114,10 @@ public class BankAccountTest {
         assertEquals(7, bankAccount.getBalance(), 0);
     }
 
+    @Test
+    public void testAlwaysPass() {
+        assertTrue(true);
+    }
     
     
     
