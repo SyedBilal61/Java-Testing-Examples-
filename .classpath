@@ -18,5 +18,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/UsEr/Desktop/DummyProject/testing.example/lib/log4j-api-2.25.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/UsEr/Desktop/DummyProject/testing.example/lib/log4j-core-2.25.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
