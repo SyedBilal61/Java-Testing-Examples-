@@ -51,4 +51,5 @@ public class BankTest {
         int newAccountId = bank.openNewBankAccount(10);
         bank.withdraw(newAccountId, 5); // Should work, no exception
     }
+    // Checking Code Coverage Nad practice every test at every stage with the help of the book 
 }
