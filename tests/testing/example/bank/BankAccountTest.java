@@ -118,7 +118,21 @@ public class BankAccountTest {
     public void testAlwaysPass() {
         assertTrue(true);
     }
-    
+    @Test
+    public void testDepositWhenAccountIsFoundShouldIncrementBalance() {
+        // setup
+        BankAccount another = createTestAccount(0);
+        bankAccounts.add(another);
+        BankAccount toBeFound = createTestAccount(INITIAL_BALANCE);
+        bankAccounts.add(toBeFound);
+        
+        // exercise
+        bank.deposit(toBeFound.getId(), AMOUNT);
+        
+        // verify
+        assertEquals(INITIAL_BALANCE + AMOUNT, toBeFound.getBalance(), 0);
+    }
+
     
     
 }
